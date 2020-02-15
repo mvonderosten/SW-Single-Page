@@ -7,7 +7,7 @@ export function Card() {
 		fetch("https://swapi.co/api/species/")
 			.then(resp => resp.json())
 			.then(data => {
-				console.log(data.results);
+				//console.log(data.results);
 				setSpecies(data.results);
 			});
 	}, []);
