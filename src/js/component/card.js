@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 export function Card() {
 	const [species, setSpecies] = useState([2, 3, 4, 15]);
@@ -17,10 +18,14 @@ export function Card() {
 			{species.map((item, index) => {
 				return (
 					<div key={index} className="card">
-						<div className="card-body">{item.name}</div>
+						<div className="card-body">{item.props.swArray}</div>
 					</div>
 				);
 			})}
 		</div>
 	);
 }
+
+Card.propTypes = {
+	swArray: PropTypes.array
+};
