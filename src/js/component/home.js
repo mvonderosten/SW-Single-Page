@@ -9,7 +9,7 @@ export function Home() {
 	return (
 		<>
 			<h1>Star Wars Species</h1>
-			<Card swArray="name" />
+			<Card />
 		</>
 	);
 }
