@@ -9,7 +9,9 @@ export function Home() {
 	return (
 		<>
 			<h1>Star Wars Species</h1>
-			<Card />
+			<div className="card-body d-flex justify-content-center">
+				<Card />
+			</div>
 		</>
 	);
 }
