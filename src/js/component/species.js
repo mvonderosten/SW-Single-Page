@@ -6,16 +6,33 @@ export function Species(props) {
 		<div>
 			<div className="card">
 				<div className="card-body">
+					{"Name: "}
 					{props.object.name}
+					<br />
+					{"Classification: "}
 					{props.object.classification}
+					<br />
+					{"Desugnation: "}
 					{props.object.designation}
-					{/* {props.design}
-					{props.avHeight}
-					{props.sColor}
-					{props.hColor}
-					{props.eColor}
-					{props.aveLifespan}
-					{props.lan} */}
+					<br />
+					{"Average Height: "}
+					{props.object.average_height}
+					<br />
+					{"Skin Color: "}
+					{props.object.skin_colors}
+					<br />
+					{"Hair Color: "}
+					{props.object.hair_colors}
+					<br />
+					{"Eye Color: "}
+					{props.object.eye_colors}
+					<br />
+					{"Average Lifespn: "}
+					{props.object.average_lifespan}
+					<br />
+					{"Language: "}
+					{props.object.language}
+					<br />
 				</div>
 			</div>
 		</div>
@@ -25,14 +42,5 @@ export function Species(props) {
 Species.propTypes = {
 	swArray: PropTypes.array,
 	words: PropTypes.string,
-	object: PropTypes.object,
-	nam: PropTypes.array,
-	classi: PropTypes.array,
-	design: PropTypes.array,
-	avHeight: PropTypes.array,
-	sColor: PropTypes.array,
-	hColor: PropTypes.array,
-	eColor: PropTypes.array,
-	aveLifespan: PropTypes.array,
-	lan: PropTypes.array
+	object: PropTypes.object
 };
