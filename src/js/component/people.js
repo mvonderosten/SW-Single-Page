@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-export function Species(props) {
+export function People(props) {
 	return (
 		<div>
 			<div className="card">
@@ -9,29 +9,26 @@ export function Species(props) {
 					{"Name: "}
 					{props.object.name}
 					<br /> <br />
-					{"Classification: "}
-					{props.object.classification}
+					{"Height: "}
+					{props.object.height}
 					<br /> <br />
-					{"Desugnation: "}
-					{props.object.designation}
-					<br /> <br />
-					{"Average Height: "}
-					{props.object.average_height}
+					{"Mass: "}
+					{props.object.mass}
 					<br /> <br />
 					{"Skin Color: "}
-					{props.object.skin_colors}
+					{props.object.skin_color}
 					<br /> <br />
 					{"Hair Color: "}
-					{props.object.hair_colors}
+					{props.object.hair_color}
 					<br /> <br />
 					{"Eye Color: "}
-					{props.object.eye_colors}
+					{props.object.eye_color}
 					<br /> <br />
-					{"Average Lifespn: "}
-					{props.object.average_lifespan}
+					{"Birth Year "}
+					{props.object.birth_year}
 					<br /> <br />
-					{"Language: "}
-					{props.object.language}
+					{"Gender: "}
+					{props.object.gender}
 					<br /> <br />
 				</div>
 			</div>
@@ -39,7 +36,7 @@ export function Species(props) {
 	);
 }
 
-Species.propTypes = {
+People.propTypes = {
 	swArray: PropTypes.array,
 	words: PropTypes.string,
 	object: PropTypes.object
