@@ -18,22 +18,29 @@
     
 }
 
-.card {
+.card-whole {
 width: 500px;
 height: auto;
 
-
+text-align: center;
 
 
   
   
   border: 5px solid #ffff00;
-  border-spacing: 15px;
+
   margin: 20px;
   font-family: 'Courier New', Courier, monospace;
 color: #ffff00;
-background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4e/Pleiades_large.jpg");
+
+
 }
+
+.card {
+
+background-image: url("https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/341080/910/606/m2/fpnw/wm1/zxhv6io2fgmn6civz6hvtdekf8kehazzyuxleapmjgwnu9rwlmxykpyd4hukadfe-.jpg?1423159322&s=352455e2e986f115ae367179923a73d4");
+}
+
 
 h1 {
 
@@ -43,7 +50,7 @@ font-size: 50px;
 color: #ffff00;
 text-align: center;
 padding-top: 20px;
-padding-bottom: 25px;
+
 
 
 }

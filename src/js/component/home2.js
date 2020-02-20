@@ -24,18 +24,10 @@ export function Home() {
 				<div>
 					{species.map((item, index) => {
 						return (
-							<div key={item} className="card-whole">
+							<div key={index} className="card-whole">
 								<Species
-									object={item}
-									nam={item.name}
-									classi={item.classification}
-									design={item.designation}
-									avHeighty={item.average_height}
-									sColor={item.skin_colors}
-									hColor={item.hair_colors}
-									eColor={item.eye_colors}
-									aveLifespan={item.average_lifespan}
-									lan={item.language}
+									words="Language: "
+                                    object={item}
 								/>
 							</div>
 						);
